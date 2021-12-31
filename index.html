@@ -1,401 +1,359 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- :: Head -->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="author" content="Dedek Julian" />
-	<meta name="description" content="Personal website of Dedek Julian." />
-	<meta name="theme-color" content="#0444f9" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta name="keywords" content="Dedek" />
-	<meta name="msapplication-tap-highlight" content="no" />
-	<!-- Bootstrap CSS File -->
-	<link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css" />
-	<!-- Font Awesome CSS File -->
-	<link rel="stylesheet" href="./assets/css/lib/font-awesome.min.css" />
-	<!-- Style CSS File -->
-	<link rel="stylesheet" href="./assets/css/custom/style.css" />
-	<!-- Page CSS File -->
-	<link rel="stylesheet" href="./assets/css/custom/index.css" />
-	<!-- Site Title -->
-	<title>Dedek Julian - User Interface Designer</title>
-	<!-- Fav Icon -->
-	<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-</head>
-<!-- :: Body -->
+        <link href="output.css" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png" />
 
-<body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<!-- :: Navbar -->
-	<div class="navbar p-0">
-		<!-- small nav -->
-		<div class="s-nav d-lg-none d-block">
-			<div class="container-fluid">
-				<!-- nav contain -->
-				<div class="nav-contain">
-					<!-- brand -->
-					<a href="#" class="brand">
-						<img src="./assets/images/logos/thumbnail.png" class="img-fluid" alt="img">
-					</a>
-					<!-- toggle button -->
-					<button id="toggle-nav">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-				</div>
-			</div>
-		</div>
-		<!-- main nav -->
-		<nav>
-			<div class="container">
-				<!-- nav contain -->
-				<div class="nav-contain">
-					<!-- brand -->
-					<a class="brand" href="#">
-						<img src="./assets/images/logos/thumbnail.png" class="img-fluid" alt="img">
-					</a>
-					<!-- nav item contain -->
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#top" data-target="Header">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Blog</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Assets</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</div>
-
-	<!-- :: Header  -->
-	<header id="top">
-		<div class="container position-relative z-indexed">
-			<!-- text contain -->
-			<div class="t-c text-center">
-				<h1 class="mx-auto">Halo! saya Dedek Julian, seorang User Interface Designer</h1>
-				<p>Website ini menjadi wadah saya untuk berbagi cerita, ilmu dan aset desain</p>
-				<a href="http://linktr.ee/dedekj26" target="_blank" class="th-btn-success">
-					Lainnya <i class="fa fa-arrow-right ml-2 d-flex align-items-center justify-content-center"></i>
-				</a>
-			</div>
-		</div>
-	</header>
-
-    <!-- :: Features -->
-    <div class="features py-80">
-        <div class="container">
-            <!-- row -->
-            <div class="row">
-                <!-- col -->
-                <div class="col-lg-6 mb-lg-0 mb-30 text-md-left text-center">
-                    <!-- item -->
-                    <div class="fe-item mt-5">
-                        <h4 class="mb-3">Desainer Baru Belajar</h4>
-                        <p class="mb-0">
-                            Hai, saya Dedek, saat ini tinggal di Palembang, Sumatera Selatan (wong kito lur). Bagi saya belajar UI dan UX itu menarik dan seru karena selain menyusun elemen-elemen desain, juga harus mempertimbangkan kenyamanan pengguna. Tapi saya memilih untuk fokus ke bagian UI saja karena lebih suka membuat tampilan yang cantik.
-                            <br><br>
-                            Website ini akan sekaligus menjadi wadah saya untuk belajar menulis, dan berbagi ilmu. Karena seperti kata orang-orang, mengajar adalah salah satu metode belajar yang terbaik. terimakasih sudah berkunjung, semoga bermanfaat...
-                        </p>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header class="absolute w-full bg-gray-800 z-10 px-5 lg:px-24">
+            <div class="container mx-auto">
+                <nav class="flex flex-stretch items-center py-3">
+                    <div class="w-56 flex items-center">
+                        <img src="../dist/img/brand.svg" alt="">
                     </div>
-                </div>
 
-                <!-- col -->
-                <div class="col-lg-6 mb-lg-0 mb-30 m-auto text-center">
-                    <!-- item -->
-                    <img src="assets/images/pages/hero-1.png" alt="" class="img-fluid">
-                </div>
+                    <div class="w-full"></div>
+
+                    <div class="w-auto">
+                        <ul class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex">
+                            <li class="mx-5 py-6 md:py-0">
+                                <a href="#" class="text-slate-100">Home</a>
+                            </li>
+
+                            <li class="mx-5 py-6 md:py-0">
+                                <a href="#" class="text-slate-400 transition duration-300 ease-in-out hover:text-slate-100">Blog</a>
+                            </li>
+
+                            <li class="mx-5 py-6 md:py-0">
+                                <a href="#" class="text-slate-400 transition duration-300 ease-in-out hover:text-slate-100">Asset</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w-auto">
+                        <ul class="flex items-center">
+                            <li class="ml-6 block md:hidden">
+                                <button class="menu-toggler relative flex items-center justify-center w-8 h-8 text-black hover:text-white focus:outline-none">
+                                    <img src="../dist/img/burger_menu.svg" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Mobile -->
+        <div class="fixed z-50 inset-0 bg-gray-800 bg-opacity-90 transition-opacity px-5 lg:px-24 hidden md:invisible" id="mobile-menu">
+            <div class="container mx-auto">
+                <nav class="flex flex-stretch items-center py-3">
+                    <div class="w-56 flex items-center">
+                        <img src="../dist/img/brand.svg" alt="">
+                    </div>
+
+                    <div class="w-full"></div>
+
+                    <div class="w-auto">
+                        <ul class="flex items-center">
+                            <li class="ml-6 block">
+                                <button class="menu-close relative flex items-center justify-center w-8 h-8">
+                                    <img src="../dist/img/burger_close.svg" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="w-auto">
+                <ul class="flex flex-col items-center justify-center">
+                    <li class="items-center mx-5 py-6">
+                        <a href="#" class="text-slate-100">Home</a>
+                    </li>
+
+                    <li class="mx-5 py-6 md:py-0">
+                        <a href="#" class="text-slate-400 transition duration-300 ease-in-out hover:text-slate-100">Blog</a>
+                    </li>
+
+                    <li class="mx-5 py-6 md:py-0">
+                        <a href="#" class="text-slate-400 transition duration-300 ease-in-out hover:text-slate-100">Asset</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+        <!-- End Navbar -->
 
-    <!-- :: Partners -->
-    <div class="partners py-80 bg-2">
-        <div class="container">
-            <!-- section head -->
-            <div class="section-head text-center">
-                <h3 class="mb-3">Eksplorasi UI Design</h3>
-                <p>Karya desain user interface yang pernah saya kerjakan.</p>
-            </div>
-            <!-- row -->
-            <div class="row align-items-center text-lg-left text-center mb-60">
-                <!-- col -->
-                <div class="col-lg-6 mb-lg-0 mb-4">
-                    <!-- contect -->
-                    <div class="content">
-                        <!-- img contain -->
-                        <div class="img-c">
-                            <img src="./assets/images/pages/01.jpg" class="img-fluid" alt="img">
-                        </div>
-                        <div class="th-badge green top right d-flex align-items-center justify-content-center">
-                            <img src="./assets/images/icons/open-book.svg" class="img-fluid" alt="img">
-                        </div>
-                    </div>
-                </div>
-                <!-- col -->
-                <div class="col-lg-6">
-                    <!-- text contain -->
-                    <div class="t-c">
-                        <h3 class="mb-3">Aplikasi Booking Tiket Bioskop</h3>
-                        <p class="mb-3">
-                            Eksplorasi desain User Interface untuk aplikasi booking tiket bioskop, Desain dibuat menggunakan aplikasi figma, dengan plugin feather icon, pexels dan unsplash..
+        <!-- Hero -->
+        <div class="hero w-full bg-slate-100 px-5 lg:px-24 lg:py-12 bg-cover" style="background-image: url('img/bg_hero.png')">
+            <div class="container mx-auto">
+                <div class="flex flex-col-reverse md:flex-row items-center py-24">
+                    <div class="w-full text-center md:text-left">
+                        <h1 class="text-grey-800 text-lg md:text-xl">
+                            I'am 
+                            <span class="font-semibold">
+                                Dedek Julian,
+                                <span class="lg:block">UI Designer</span>
+                            </span>
+                        </h1>
+                        
+                        <p class="text-sm md:text-md font-light mt-5 mb-8">
+                            Also a lifetime learner who love clean and minimalist User Interface design.
                         </p>
-                        <a href="https://dribbble.com/shots/16527665-Movie-Ticket-Booking-App" class="text-capitalize">lihat selengkapnya<i class="fa fa-arrow-right ml-2"></i></a>
+
+                        <a href="" class="bg-gray-800 px-6 py-3 text-slate-100 rounded-lg transition duration-300 ease-in-out hover:text-yellow-400 hover:shadow-xl">
+                            Know More <i class="inline" data-feather="arrow-right"></i>
+                        </a>
                     </div>
-                </div>
-            </div>
-            <!-- row -->
-            <div class="row align-items-center text-lg-left text-center mb-60">
-                <!-- col -->
-                <div class="col-lg-6 order-lg-2 mb-lg-0 mb-4">
-                    <!-- contect -->
-                    <div class="content">
-                        <!-- img contain -->
-                        <div class="img-c">
-                            <img src="./assets/images/pages/02.jpg" class="img-fluid" alt="img">
-                        </div>
-                        <div class="th-badge blue bottom left d-flex align-items-center justify-content-center">
-                            <img src="./assets/images/icons/network.svg" class="img-fluid" alt="img">
-                        </div>
-                    </div>
-                </div>
-                <!-- col -->
-                <div class="col-lg-6 order-lg-1">
-                    <!-- text contain -->
-                    <div class="t-c">
-                        <h3 class="mb-3">Aplikasi To Do List Mobile</h3>
-                        <p class="mb-3">Eksplorasi desain User Interface untuk aplikasi mobile pengerjaan dan pencatatan tugas.</p>
-                        <a href="https://dribbble.com/shots/15107491-UI-Design-To-Do-List-App" class="text-capitalize">Lihat Selengkapnya<i class="fa fa-arrow-right ml-2"></i></a>
+
+                    <div class="w-full">
+                        <img class="" src="../dist/img/hero.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- End Hero -->
 
-	<!-- :: Team -->
-	<!-- <div class="team py-80 ">
-		<div class="container">
-			<div class="section-head text-center">
-				<h3 class="mb-3">Artikel Terbaru</h3>
-				<p>Beberapa artikel terbaru yang saya tulis di website ini.</p>
-			</div>
+        <!-- Blog -->
+        <div class="blog w-full bg-gray-800 lg:py-12 pb-12 bg:cover" style="background-image: url('img/bg_blog.png')">
+            <div class="container mx-auto px-5 lg:px-24">
+                <div class="flex flex-col md:flex-row pt-24">
+                    <div class="w-full">
+                        <p class="text-slate-100 text-sm md:text-md font-light">
+                            My Writing
+                        </p>
 
+                        <h1 class="text-slate-100 text-lg md:text-xl font-semibold">
+                            Newest
+                            <br />Blog Article
+                        </h1>
+                    </div>
 
-			<div class="row">
-				<div class="col-lg-6 mb-30">
+                    <div class="w-full mt-10 md:mt-0">
+                        <p class="text-slate-100 text-sm md:text-md font-light">
+                            I write some of my knowledge in the blog section, most of them will be article about Design, especially <span class="font-medium">User Interface Design.</span> My article might not good enough, so feel free to contact me if you have any suggestion.
+                        </p>
+                    </div>
+                </div>
 
-					<div class="item d-flex flex-md-row flex-column align-items-center justify-content-start">
+                <div class="flex flex-row py-12 md:pt-24 md:pb-12">
+                    <div class="w-1/3 md:w-full">
+                        <p class="text-sm md:text-md text-slate-100">
+                            Blog
+                        </p>
+                    </div>
 
-						<img src="./assets/images/users/man-4.jpg" class="img-fluid" alt="img">
+                    <div class="w-full text-right">
+                        <a href="" class="bg-slate-100 px-6 py-3 text-gray-800 rounded-lg transition duration-300 ease-in-out hover:bg-slate-200">
+                            View More <i class="inline" data-feather="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
-						<div
-							class="t-i pl-md-4 pl-0 pt-md-0 pt-4 d-flex flex-column align-items-md-start align-items-center justify-content-between">
+                <div class="w-full py-12 text-slate-100 font-light text-center">
+                    Will be updated soon!
+                </div>
 
-							<div class="text-md-left text-center">
-								<h5 class="name mb-1">Jhon Doe</h5>
-								<h6 class="job mb-3">Web Designer</h6>
-							</div>
+                <div class="owl-carousel">
+                    <div class="item transition duration-300 ease-in-out card bg-gray-700 p-5 rounded-lg">
+                        <img src="img/thumbnail.png" alt="">
 
-							<p class="caption mb-3 text-md-left text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Quia nesciunt corrupti
-								error.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
+                        <p class="mt-3 text-slate-100 transition duration-300 ease-in-out hover:text-yellow-400 text-sm md:text-md">
+                            <a href="#" class="">
+                                My Opinion about UI/UX
+                            </a>
+                        </p>
 
-	<!-- :: Why Us -->
-	<div class="why-us py-80 bg-2">
-		<div class="container">
-			<!-- section head -->
-			<div class="section-head text-center">
-				<h3 class="mb-3">Asset Terbaru</h3>
-				<p>Di website ini saya juga berbagi aset desain gratis, yang dapat berupa template, ilustrasi, icon, dll.</p>
-			</div>
-			<!-- row -->
-			<div class="row align-items-end">
-				<!-- col -->
-				<div class="col-lg-4 col-md-6 col-12">
-					<!-- box -->
-                    <a href="https://karyakarsa.com/dedekj26/violet-music-onboarding-ui-figma">
-    					<div class="service-box mb-30">
-    						<!-- icon -->
-    						<div class="icon">
-    							<i class="fa fa-gear d-flex align-items-center justify-content-center"></i>
-    						</div>
-    						<!-- text contain -->
-    						<div class="t-c text-md-left text-center">
-    							<h4 class="mb-3 text-uppercase">
-                                    UI Onboarding aplikasi violet music
-                                </h4>
-    							<p class="mb-0">File editable dalam format figma (.fig) </p>
-    						</div>
-    					</div>
-                    </a>
+                        <p class="mt-1 text-xs md:text-sm font-light text-slate-100">
+                            20 Mei 2021
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Blog -->
 
-					<!-- box -->
-                    <a href="https://karyakarsa.com/dedekj26/instagram-feed-template-canva-48188">
-    					<div class="service-box mb-md-0 mb-30">
-    						<!-- icon -->
-    						<div class="icon">
-    							<i class="fa fa-binoculars d-flex align-items-center justify-content-center"></i>
-    						</div>
-    						<!-- text contain -->
-    						<div class="t-c text-md-left text-center">
-    							<h4 class="mb-3 text-uppercase">Instagram Feed Template</h4>
-    							<p class="mb-0">Karya ini merupakan desain template feed instagram, atau sosmed yang lain sesuai kebutuhan, editable file format canva</p>
-    						</div>
-    					</div>
-                    </a>
-				</div>
+        <!-- Asset -->
+        <div class="blog w-full bg-slate-100 lg:py-12 pb-12 bg:cover" style="background-image: url('img/bg_asset.png')">
+            <div class="container mx-auto px-5 lg:px-24">
+                <div class="flex flex-col md:flex-row pt-24">
+                    <div class="w-full">
+                        <p class="text-gray-800 text-sm md:text-md font-light">
+                            Asset
+                        </p>
 
-				<!-- col -->
-				<div class="col-lg-4 col-md-6 col-12 d-lg-flex d-none">
-					<div class="why-choose-banner">
-						<img src="./assets/images/users/man-6.png" class="img-fluid" alt="">
-					</div>
-				</div>
+                        <h1 class="text-gray-800 text-lg md:text-xl font-semibold">
+                            Newest
+                            <br />Design Asset
+                        </h1>
+                    </div>
 
-				<!-- col -->
-				<div class="col-lg-4 col-md-6 col-12">
-					<!-- box -->
-                    <a href="https://karyakarsa.com/dedekj26/ui">
-    					<div class="service-box d-flex align-items-start justify-content-start mb-30">
-    						<!-- icon -->
-    						<div class="icon">
-    							<i class="fa fa-camera d-flex align-items-center justify-content-center"></i>
-    						</div>
-    						<!-- text contain -->
-    						<div class="t-c text-md-left text-center">
-    							<h4 class="mb-3 text-uppercase">UI App Booking Tiket</h4>
-    							<p class="mb-0">Desain User Interface untuk aplikasi Booking Ticket Bioskop, desain tersebut (dalam bentuk file figma / .fig)</p>
-    						</div>
-    					</div>
-                    </a>
+                    <div class="w-full mt-10 md:mt-0">
+                        <p class="text-gray-800 text-sm md:text-md font-light">
+                            I love to share with you my design asset to help any of you create your amazing design faster. On the asset section, I will share <span class="font-medium">UI Kit, design template or even illustration.</span> You can download almost all of them for <span class="font-medium">FREE.</span>
+                        </p>
+                    </div>
+                </div>
 
-					<!-- box -->
-                    <a href="https://www.canva.com/design/DAEU2vLAmik/hHgf1uQa_hwT92_VoAitKQ/view?utm_content=DAEU2vLAmik&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview">
-    					<div class="service-box d-flex align-items-start justify-content-start mb-0">
-    						<!-- icon -->
-    						<div class="icon">
-    							<i class="fa fa-circle-o d-flex align-items-center justify-content-center"></i>
-    						</div>
-    						<!-- text contain -->
-    						<div class="t-c text-md-left text-center">
-    							<h4 class="mb-3 text-uppercase">Ilustrasi CV</h4>
-    							<p class="mb-0">File editable illustration CV dalam format canva</p>
-    						</div>
-    					</div>
-                    </a>
-				</div>
-			</div>
-		</div>
-	</div>
+                <div class="flex flex-row py-12 md:pt-24 md:pb-12">
+                    <div class="w-1/3 md:w-full">
+                        <p class="text-sm md:text-md text-gray-800">
+                            Asset
+                        </p>
+                    </div>
 
-	<!-- :: Footer -->
-	<footer>
+                    <div class="w-full text-right">
+                        <a href="" class="bg-gray-800 px-6 py-3 text-slate-100 rounded-lg transition duration-300 ease-in-out hover:bg-gray-700">
+                            View More <i class="inline" data-feather="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
-		<!-- social bar -->
-		<div class="social-bar">
-			<div class="container">
-				<!-- row-->
-				<div class="row py-4 d-flex flex-md-row flex-column align-items-center">
-					<!-- col -->
-					<div class="col-md-8 text-md-left text-center mb-md-0 mb-4">
-						<h6 class="mb-0">Tetap terhubung dengan saya!</h6>
-					</div>
-					<!-- col -->
-					<div class="col-md-4 text-md-right text-center">
-						<ul class="d-flex align-items-center justify-content-md-end justify-content-center list-unstyled mb-0">
-							<li>
-								<a href="https://facebook.com/dedek.julian.1"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="https://twitter.com/dedekj26"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="https://instagram.com/dedekj26"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+                <div class="w-full py-12 text-gray-800 font-light text-center">
+                    Will be updated soon!
+                </div>
 
-		<!-- Footer Links -->
-		<div class="container my-5">
-			<!-- row -->
-			<div class="row mt-3">
+                <div class="owl-carousel">
+                    <div class="item transition duration-300 ease-in-out card bg-slate-200 p-5 rounded-lg">
+                        <img src="img/thumbnail.png" alt="">
 
-				<!-- col -->
-				<div class="col-lg-5 col-md-6 mb-lg-0 mb-30">
-					<!-- Content -->
-					<div class="content">
-						<h6>Dedek Julian</h6>
-						<hr class="links-hr mb-md-3 mt-0 d-block ml-0" style="width: 60px;">
-						<p class="mb-0">Website ini menjadi wadah saya untuk berbagi cerita, ilmu dan aset desain.</p>
-					</div>
-				</div>
+                        <p class="mt-3 text-gray-800 transition duration-300 ease-in-out hover:text-blue-800 text-sm md:text-md">
+                            <a href="#" class="">
+                                My Opinion about UI/UX
+                            </a>
+                        </p>
 
-				<!-- col -->
-				<div class="col-lg-2 col-md-3 col-6 mb-lg-0 mb-30">
-					<!-- Links -->
-					<h6 class="text-uppercase links-head">Services</h6>
-					<hr class="links-hr mb-md-3 mt-0 d-block ml-0" style="width: 60px;">
-					<ul class="links mb-0 list-unstyled">
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">Blog</a>
-						</li>
-						<li>
-							<a href="#">Assets</a>
-						</li>
-					</ul>
-				</div>
+                        <p class="mt-1 text-xs md:text-sm font-light text-gray-800">
+                            20 Mei 2021
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Asset -->
 
-				<!-- col -->
-				<div class="col-lg-3 col-md-6 col-12">
-					<!-- Links -->
-					<h6 class="text-uppercase links-head">Contact</h6>
-					<hr class="links-hr mb-md-3 mt-0 d-block ml-0" style="width: 60px;">
-					<ul class="links mb-0 list-unstyled">
-						<li>
-							<i class="fa fa-home mr-3"></i> Palembang, Indonesia
-						</li>
-						<li>
-							<i class="fa fa-envelope mr-3"></i> dedek.julian99@gmail.com
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+        <!-- Portfolio 1 -->
+        <div class="blog w-full bg-gray-800 lg:py-12 pb-12 bg:cover" style="background-image: url('img/bg_portfolio.png')">
+            <div class="container mx-auto px-5 lg:px-24">
+                <div class="flex flex-col md:flex-row pt-24">
+                    <div class="w-full">
+                        <p class="text-slate-100 text-sm md:text-md font-light">
+                            27 Oktober 2021
+                        </p>
 
-		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">
-			<span class="mr-1">© 2021 Copyright</span>
-			<a href="http://linktr.ee/dedekj26" target="_blank"> Dedek Julian</a>
-		</div>
+                        <h1 class="text-slate-100 text-lg md:text-xl font-semibold">
+                            Movie
+                            <br />Ticket Booking
+                            <br />Mobile App
+                            <br />Exploration
+                        </h1>
+                    </div>
 
-	</footer>
+                    <div class="w-full mt-10 md:mt-0">
+                        <p class="mb-12 text-slate-100 text-sm md:text-md font-light">
+                            With this app, user can <span class="font-medium">search and explore their favorite movie,</span> also they can book the ticket just by phone. Each movie in this application will be provided with a rating, so user can easily choose the best movie for them.
+                        </p>
 
-	<!-- :: Scripts -->
-	<!-- Jquery -->
-	<script src="./assets/js/lib/jquery-3.3.1.min.js"></script>
-	<!-- Popper -->
-	<script src="./assets/js/lib/popper.js"></script>
-	<!-- Bootstrap -->
-	<script src="./assets/js/lib/bootstrap.min.js"></script>
-	<!-- Custom Script File -->
-	<script src="./assets/js/custom/javaScript.js"></script>
-</body>
+                        <a href="" class="bg-slate-100 px-6 py-3 text-gray-800 rounded-lg transition duration-300 ease-in-out hover:bg-slate-200">
+                            Get This UI <i class="inline" data-feather="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="w-full mt-12 md:mt-36">
+                    <img src="img/portfolio_1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio 1 -->
+
+        <!-- Portfolio 2 -->
+        <div class="blog w-full bg-slate-100 lg:py-12 pb-12 bg:cover" style="background-image: url('img/bg_portfolio2.png')">
+            <div class="container mx-auto px-5 lg:px-24">
+                <div class="flex flex-col md:flex-row pt-24">
+                    <div class="w-full">
+                        <p class="text-gray-800 text-sm md:text-md font-light">
+                            27 Oktober 2021
+                        </p>
+
+                        <h1 class="text-gray-800 text-lg md:text-xl font-semibold">
+                            To Do List
+                            <br />Mobile App
+                            <br />User Interface
+                            <br />Exploration
+                        </h1>
+                    </div>
+
+                    <div class="w-full mt-10 md:mt-0">
+                        <p class="mb-12 text-gray-800 text-sm md:text-md font-light">
+                            This app is used to <span class="font-medium">create a list of task to do.</span> User can also activated the reminder, so they know when it’s time to do their task. User can see their history, when and how they do the task before. I learn to combine some 3d images in this User Interface Exploration.
+                        </p>
+
+                        <a href="" class="bg-gray-800 px-6 py-3 text-slate-100 rounded-lg transition duration-300 ease-in-out hover:bg-gray-700">
+                            Get This UI <i class="inline" data-feather="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full mt-12 md:mt-36">
+                    <img src="img/portfolio_2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio 2 -->
+
+        <!-- Web Resource -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            const btn = document.querySelector(".menu-toggler");
+            const btn2 = document.querySelector(".menu-close");
+            const menu = document.querySelector("#mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+
+            btn2.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:20,
+                autoplay:true,
+                stagePadding: 50,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1,        
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3,
+                    }
+                },
+            })
+        </script>
+
+        <script>
+            feather.replace()
+        </script>
+    </body>
 </html>
